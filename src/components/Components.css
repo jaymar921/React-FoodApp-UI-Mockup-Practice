@@ -1,0 +1,320 @@
+:root{
+    --yellowPrimary: #FFBE00;
+}
+@font-face {
+    font-family: CustomFont;
+    src: url('../assets/fonts/LaBelleAurore-Regular.ttf');
+}
+.profile-container{
+    position: relative;
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+}
+
+.profile-flex{
+    position: relative;
+    display: flex;
+}
+
+.profile-flex img{
+    position: relative;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+}
+
+.profile-info{
+    position: relative;
+    margin-left: 10px;
+}
+
+.profile-info h3,
+.profile-info p{
+    margin: 0;
+}
+
+.profile-info h3{
+    font-size: 18px;
+}
+
+.profile-info p{
+    color: grey;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.right{
+    position: absolute;
+    right: 0;
+}
+
+.btn-primary{
+    position: relative;
+    background-color: var(--yellowPrimary);
+    color: white;
+    border: none;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.btn-big{
+    height: 45px;
+    width: 45px;
+}
+
+
+.btn-small{
+    height: 25px;
+    width: 25px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+
+.banner-container{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: var(--yellowPrimary);
+    border-radius: 10px;
+}
+
+.banner-info{
+    position: relative;
+    font-family: CustomFont;
+    width: 80%;
+    margin: 0;
+    padding: 10px;
+}
+
+.banner-info h3,
+.banner-info p{
+    margin: 0;
+}
+
+.banner-info h3{
+    font-size: 25px;
+    margin-top: 10px;
+}
+.banner-info p{
+    position: relative;
+    font-size: 15px;
+    margin-top: -10px;
+    font-weight: 500;
+}
+
+.banner img{
+    position: absolute;
+    width: auto;
+    height: 100px;
+    top: 10%;
+    right: 0;
+}
+
+.flex{
+    display: flex;
+}
+
+.itemlist-container{
+    position: relative;
+}
+
+.itemlist-container .header,
+.restaurants-container .header{
+    position: relative;
+}
+
+.itemlist-container .header a,
+.restaurants-container .header a{
+    font-size: 12px;
+    color: var(--yellowPrimary);
+    text-decoration: none;
+}
+
+.marginTop-25{
+    margin-top: 25px;
+}
+
+.items-container{
+    position: relative;
+    width: 100%;
+    height: 225px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.item{
+    position: relative;
+    background-color: white;
+    width: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.item img{
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.item-info h4{
+    margin: 0;
+}
+
+.item-info p{
+    margin: 5px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item-info{
+    position: relative;
+    margin-top: -5px;
+    padding: 10px;
+}
+
+.item-info button{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.currency{
+    color: var(--yellowPrimary);
+    font-size: 13px;
+}
+
+.item-discount{
+    position: absolute;
+    z-index: 999;
+    color: white;
+    background-color: var(--yellowPrimary);
+    width: 50px;
+    border-radius: 0px 0px 20px 0px;
+    padding: 3px;
+}
+
+.item-discount p{
+    font-size: 15px;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.resto-itemlist{
+    position: relative;
+    width: 100%;
+    height: 150px;
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.resto-item{
+    position: relative;
+    width: 200px;
+    height: 150px;
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+.resto-item div{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.resto-item div .overlay-dark{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0,0,0,0.50);
+}
+
+.resto-item div img{
+    position: relative;
+    width: 100%;
+    height: 130px;
+}
+
+.resto-item div h2{
+    position: absolute;
+    top: 0;
+    color: white;
+    margin: 0;
+    font-size: 20px;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 99;
+}
+
+.resto-item p{
+    position: relative;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.navigation{
+    position: sticky;
+    bottom: 0;
+    height: 50px;
+    background-color: white;
+    display: flex;
+}
+
+.navigation div{
+    position: relative;
+    margin: auto;
+    width: 50px;
+}
+
+.navigation div a{
+    color: grey;
+    text-decoration: none;
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+}
+
+.categories{
+    position: relative;
+    width: 50px;
+    height: 90px;
+    display: flex;
+}
+
+.categories div{
+    position: relative;
+    width: 64px;
+    height: 80px;
+    margin: auto;
+    margin-right: 10px;
+}
+
+.categories div img{
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.categories div p{
+    position: relative;
+    margin: auto;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+    margin-top: -5px;
+    font-weight: 500;
+}
